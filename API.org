@@ -1,0 +1,55 @@
+* API list
+
+#+BEGIN_SRC js
+// get record list
+// GET /api/records
+// return 
+{
+  status: 'success'
+  data: {
+    records:[
+      {record_obj}
+    ]
+  }
+}
+
+
+// get record text
+// GET /api/record/:id/text
+// return 
+{
+  status: 'success'
+  data: {
+    text:['blahblah', ...]
+  }
+}
+
+// get record table
+// GET /api/record/:id/table
+{
+  status: 'success'
+  data: {
+    tables:[
+      {
+	id:1,
+	content: [[['处罚机构'], ['处罚金额'],['...']],
+		  [['xx省环保局'],['1000元/一万五千元'],['...']]]
+      }
+    ]
+  }
+}
+
+
+// post new_record
+// POST /api/processedTable/insert
+// request.body
+
+{
+  data: {
+    id: ...,
+    text: ...,
+    entity: ...,
+    ...
+  }
+}
+#+END_SRC
