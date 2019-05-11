@@ -41,7 +41,7 @@
 
 
 // post new_record
-// POST /api/processedTable/insert
+// POST /api/processedRecord/insert
 // request.body
 
 {
